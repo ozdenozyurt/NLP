@@ -4,7 +4,6 @@
 Naive Bayes algorithm is based on Bayes' theorem as shown below and is particularly effective in handling text classification tasks. It assumes that the presence of a particular feature in a class is independent of the presence of other features. Despite this "naive" assumption, Naive Bayes often performs well in practice and is computationally efficient.
 
 P(A\B)=(P(B\A)*P(A))/P(B) 
-                                                                                                                                                  (1)
 	P(A|B) = probability of A if B occurs
 	P(B|A) = probability of B if A occurs
 	P(A) = probability of A
@@ -18,12 +17,13 @@ GaussianNB: It is a classification algorithm based on the assumption of normally
 Considering its features, the use of GaussianNB was deemed appropriate in this project.
 
 
-	GAUSSİAN
+# GAUSSİAN
 GaussianNB is a variant of the Naive Bayes algorithm that assumes the likelihood of features to follow a Gaussian distribution. In the context of text classification, each feature can represent a word or a term, and the algorithm models the probability distribution of each class based on the mean and variance of the features in that class. Another advantage of GaussianNB is that it is computationally fast and has low memory requirements. In addition, its ability to give good results even in small data sets has been one of the reasons for preference.
-# Create the Gaussian Naive Bayes classifier
+
+Create the Gaussian Naive Bayes classifier
 nb = GaussianNB()
 
-	ALGORITHM IMPLEMENTATION
+# ALGORITHM IMPLEMENTATION
 
 The implementation of GaussianNB involves several steps:
 Data Preprocessing: The text data from the news articles needs to be preprocessed before feeding it into the algorithm. This typically involves steps such as tokenization, removing stopwords, and converting the text into numerical representations suitable for machine learning algorithms.
@@ -31,6 +31,8 @@ Data Preprocessing: The text data from the news articles needs to be preprocesse
 	Stop words: The words that are not important in terms of the context.
 	Tokenization: The process of extracting words in a sentence by spaces and punctuations. In this project we'll use nltk's word_tokenize.
 	Bag Of Words: BoW is the representation of text data in a numerical way that machine learning algoritms can work with.
+ ![image](https://github.com/ozdenozyurt/NLP/assets/112097458/c03189e7-71e9-4ead-818a-e8b4e2e0f2e0)
+
                        
                                           
                    
