@@ -32,6 +32,34 @@ Data Preprocessing: The text data from the news articles needs to be preprocesse
 	Tokenization: The process of extracting words in a sentence by spaces and punctuations. In this project we'll use nltk's word_tokenize.
 	Bag Of Words: BoW is the representation of text data in a numerical way that machine learning algoritms can work with.
  ![image](https://github.com/ozdenozyurt/NLP/assets/112097458/c03189e7-71e9-4ead-818a-e8b4e2e0f2e0)
+ ![image](https://github.com/ozdenozyurt/NLP/assets/112097458/9f1c9b6c-30bb-4861-a6e0-72e16e6fd84e)
+ ![image](https://github.com/ozdenozyurt/NLP/assets/112097458/12ae3752-73d1-4451-874c-ffb04c25c146)
+
+ # PARAMETERS USED
+
+	TF-ID 
+TF-IDF (Term Frequency - Inverse Term Frequency)  is a common technique used for feature weighting in text classification tasks. It assigns weights to words based on their frequency in a document. The vectorizer will calculate the weight of each word in corpus and will return a tf-idf matrix.
+
+W_(i,j)=〖tf〗_(i,j)×log⁡(█(N@-)¦(df_i ))
+                                                                                                                                        
+	td = Term frequency (number of occurance each i in j)
+	df = Document frequency
+	N = Number of documents 
+	W= tf-idf weight for each i and j (document).
+
+
+	N GRAM
+N-gram models capture the sequential relationships between words or characters in a text. By considering sequences of n consecutive words or characters.  N-gram models can capture local context and dependencies within the text. For example, a bigram model (2-gram) considers pairs of consecutive words. To give an example from the data set, the words in the expression "blood pressure" have different meanings separately, but when evaluated together, they contain a meaning suitable for the medicine category.
+
+# ANALYSIS OF THE RESULTS
+As can be seen in below, it has been observed that the accuracy value of the algorithm created is 85%. However, when evaluating such problems, only looking at the accuracy value does not provide an in-depth result, so the values such as recall and f1 score, which are seen in the classification report below, have been issued, and the individual performances of the classes have been determined in the latest confusion matrix.
+![image](https://github.com/ozdenozyurt/NLP/assets/112097458/cf123d21-66c0-4dde-abde-97192cd69fc8)
+![image](https://github.com/ozdenozyurt/NLP/assets/112097458/e403f8b2-c332-4586-b9e3-22ab75eedb13)
+
+
+
+
+
 
                        
                                           
